@@ -105,15 +105,13 @@ resources:
       Type: AWS::DynamoDB::Table
       Properties:
         TableName: restaurants-${self:provider.stage}-${self:custom.name}
+        BillingMode: PAY_PER_REQUEST
         AttributeDefinitions:
           - AttributeName: name
             AttributeType: S
         KeySchema:
           - AttributeName: name
             KeyType: HASH
-        ProvisionedThroughput:
-          ReadCapacityUnits: 1
-          WriteCapacityUnits: 1
 
     orderEventsStream:
       Type: AWS::Kinesis::Stream
