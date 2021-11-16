@@ -21,7 +21,7 @@
     "serverless-pseudo-parameters": "^1.6.0"
   },
   "dependencies": {
-    "aws-sdk": "^2.273.1",
+    "aws-sdk": "^2.814.0",
     "aws4": "^1.7.0",
     "awscred": "^1.4.1",
     "bluebird": "^3.5.1",
